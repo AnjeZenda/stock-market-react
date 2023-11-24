@@ -1,13 +1,268 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fbe1b6;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  width: auto;
+  margin-top: 40px;
+}
+
+.navigation {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation__link {
+  padding: 10px;
+  width: auto;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #809059;
+}
+
+.navigation__link:visited {
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #ffb948;
+}
+
+.table__header_broker,.table__row_broker{
+  display: flex;
+  border-bottom: 1px solid #809059;
+}
+
+.header__elem,.table__elem{
+  padding: 10px;
+  box-sizing: border-box;
+  width: 460px;
+  border-right: 1px solid #809059;
+  justify-content: space-between;
+}
+
+.header__elem:nth-child(3), .table__elem:nth-child(3){
+  border-right: none;
+}
+
+.header__elem{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input{
+  width: 260px;
+  background: #FFEDE5;
+  height: 40px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #809059;
+  color: #212121;
+  font-size: 18px;
+  outline: none;
+  border-radius: 2px;
+  transition: all 0.2s ease-out;
+}
+
+input:hover{
+  opacity: .9;
+}
+input:focus-visible{
+  border: 2px solid #DBBCA4;
+  outline: none;
+}
+
+button{
+  flex: 1;
+  background: #FFEDE5;
+  border: none;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+button:hover{
+  background: #DBBCA4;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.table__btn{
+  background: #809059;
+  color: #FFEDE5;
+}
+.table__btn:hover{
+  background: #809059;
+  color: #FFEDE5;
+}
+
+.btn{
+  display: block;
+  justify-self: center;
+  align-self: center;
+  font-size: 64px;
+  line-height: 1;
+  background: #809059;
+  margin: 40px auto 0;
+  font-weight: 700;
+  width: 320px;
+  padding: 10px;
+}
+.btn:hover{
+  background: #809059;
+  color: #FFEDE5;
+  opacity: 1;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup{
+  background: #fff;
+  border-radius: 20px;
+  padding: 60px;
+  position: relative;
+}
+
+.popup input{
+  width: 100%;
+}
+
+.popup__balance{
+  margin: 20px 0;
+}
+
+.popup .table__btn{
+  width: 100%;
+  height: 50px;
+}
+
+.popup__title{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #212121;
+  background: transparent;
+}
+button.close:hover{
+  background: transparent;
+  color: #212121;
+  opacity: 0.7;
+}
+
+.checkbox {
+  height: 20px;
+}
+
+.table__row_stocks {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 40px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.p_stocks {
+  width: 400px;
+}
+
+.stocks_btn {
+  flex: none;
+  padding: 10px;
+  color: #809059;
+}
+
+.modal_chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup_chart {
+  width: 70vw;
+  height: 70vh;
+  background-color: #fff;
+}
+
+.chart_btn {
+  /*color: #fbe1b6;*/
+  border-radius: 5px;
+}
+
+.table__row_trading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trading__elem {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 460px;
+  justify-content: space-between;
+}
+
+.inner__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trading__btns {
+
+}
+
+.input__field {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.label {
+  width: 100px;
 }
